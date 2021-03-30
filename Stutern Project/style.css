@@ -1,0 +1,474 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:violet;
+    max-width: 100%;
+    
+    
+}
+.main-container{
+    display: flex;
+    background-color: gold;
+    height: 100vh;
+}
+.sidebar{
+    background-color: whitesmoke;
+    width: 25%;
+    position: fixed;
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 20px;
+}
+.sidebar ul{
+  padding-top: 40px;
+  margin-top: 20px;
+ 
+}
+.sidebar li{
+  padding: 10px;
+  
+}
+.main{
+    background-color: pink;
+    width: 100%;
+    margin-left: 25%;
+    
+}
+.main .header{
+    background-color: indianred;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 75%;
+  
+}
+.main .header ul{
+    background-color: whitesmoke;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.main .header ul li{
+    padding: 20px;
+    padding-left: 5px;
+    
+}
+ul{
+    list-style: none;
+    padding-inline-start: 0;
+}
+.content{
+  
+    margin-top: 58px;
+    background-color: rgb(250, 232, 250);
+    width: 100%;
+    min-height: 87vh;
+    height: 91.1vh;
+               padding: 20px;
+    
+    
+    
+    
+    
+}
+.content-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: orange;
+    width: 100%;
+  
+}
+.content-head1{
+    
+    
+}
+.content-head2{
+    
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 24px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+
+  }
+  
+  .slider:before {
+    position:absolute;
+    content: "NGN";
+    height: 18px;
+    width: 40px;
+    left: 0px;
+    right: 5px;
+    bottom: 4px;
+    background-color: orange;
+    text-align: center;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+    
+    
+  }
+  .slider:after{
+   
+    content:"USD";
+    position: absolute;
+    height: 18px;
+    width: 38px;
+    left: 7px;
+    bottom: 4px;
+    
+    
+
+    
+  }
+  
+  input:checked + .slider {
+    background-color: white;
+
+    
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+    
+  }
+  
+  input:checked + .slider:before {
+   -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+    content: "NGN";
+    background-color:white;
+  }
+  input:checked + .slider:after{
+      content:"USD";
+      background-color: orange;
+      position: absolute;
+      height: 18px;
+      width: 40px;
+      left: 5px;
+      bottom: 4px;
+      text-align: center;
+      
+      
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 35%;
+  }
+  .slider.round:after {
+    border-radius: 35%;
+  }
+  #amount{
+    font-size: 30px;
+  }
+  sup{
+    font-size: 20px;
+  }
+  #Asset{
+    font-size: 14px;
+  }
+  .content-main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+
+  }
+  .left-content{
+    background-color: white;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+  }
+  .left-main{
+    background-color: ivory;
+    width: 90%;
+    margin: 30px 10px;
+    padding: 0px;
+    text-align: center;
+  }
+  .right-content{
+    background-color: white;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+  }
+  .right-main{
+    background-color: orange;
+    width: 90%;
+    margin: 30px 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    
+  }
+   #right-button{
+    border-radius: 100%;
+    width: 50px;
+    height: 40px;
+  }
+  #fa-circle{
+    height: 15px;
+    width: 15px;
+  }
+  .left-m{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .left-amt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  button{
+    border-radius: 34px;
+    padding: 1px 5px;
+    font-size: 12px;
+    
+    
+    
+  }
+  .left-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+  .left-header button{
+    border-radius: 0%;
+    width: 150px;
+    
+  }
+  .left-header button i{
+    width: 10px;
+    height: 10px;
+  }
+  
+  .right-m{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+  .right-button{
+    justify-self: flex-end;
+    
+
+  }
+  #right-button{
+    margin-right: 5px;
+  }
+  .left-button{
+    justify-self: flex-end;
+
+  }
+ .right-button  #butn{
+    border-radius: 0%;
+    width: 150px;
+    height: 30px;
+  }
+.right{
+  display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    align-items: center;
+
+}
+
+.left{
+  display: flex;
+  justify-content: space-between;
+    background-color: whitesmoke;
+    width: 100%;
+    align-items: center;
+}
+
+.Rite{
+  display: flex;
+  
+}
+.Left{
+  display: flex;
+  align-items: center;
+  
+
+}
+
+
+.all-left{
+  display: flex;
+  flex-direction: column;
+}
+.left {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+i{
+  width: 50px;
+  height: 50px;
+  
+  
+}
+#fa-circle{
+  color: orange;
+  
+  
+}
+@media(max-width:800px){
+  .content-main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    
+  }
+  .content{
+   
+   min-height: 1200px;
+  width: 900px;
+  
+   
+  }
+  .sidebar{
+    width: 135px;
+    padding-left: 0px;
+    overflow-x: auto;
+    height: 900px;
+    min-height: 1200px;
+  }
+  .main .header ul{
+    justify-content: flex-start;
+    min-width: 100%;
+    display: flex;
+    justify-self: center;
+    
+   
+    
+  }
+  .main .header{
+    max-width: 100%;
+    max-width: 650px;
+    min-width: 650px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main{
+    margin-left: 135px;
+    display: flex;
+    
+
+    
+  }
+  .main .header ul li{
+    padding: 20px;
+    
+    right: 0px;
+  }
+  .content-head{
+    padding: 15px;
+  }
+  #amount{
+    font-size: 20px;
+  }
+  sup{
+    font-size: 10px;
+  }
+  #Asset{
+    font-size: 10px;
+  }
+  .left-content{
+    width: 350px;
+    margin-bottom: 20px;
+  }
+
+  .right-content{
+    width: 350px;
+  }
+  body{
+    height: 100%;
+  }
+}
+#bold{
+  width: 15px;
+  height: 15px;
+  
+}
+#money{
+  width: 15px;
+  height: 15px;
+  
+}
+#vacation{
+  width: 15px;
+  height: 15px;
+  
+  
+}
+.bold-button{
+  margin-left: 5px;
+}
+#butn{
+  padding: 1px 2px;
+  font-size: 12px;
+}
+.right-m button{
+  background-color: rgb(240, 185, 83);
+}
+
+
+#vio{
+  background-color: violet;
+}
+#viol{
+  background-color: violet;
+}
+#wallet{
+  background-color: violet;
+}
+#wallet i{
+  background-color: violet;
+}
